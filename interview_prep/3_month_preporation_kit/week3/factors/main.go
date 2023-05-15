@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// getLargest returns the largest number in a slice
 func getLargest(arr []int32) (largest int32) {
 	for _, v := range arr {
 		if v > largest {
@@ -12,7 +13,6 @@ func getLargest(arr []int32) (largest int32) {
 }
 
 func getTotalX(a []int32, b []int32) (betweens int32) {
-
 	start := getLargest(a)
 	loopTo := getLargest(b)
 	considered := map[int32]int32{}
